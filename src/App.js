@@ -10,6 +10,12 @@ class App extends Component {
     tasks: [],
   }
 
+  shouldComponentUpdate(nextProps, nextState) {
+    if (nextState.tasks === this.state.tasks) {
+      return false
+    }
+    return true
+  }
 
   onAddTask = (val) => {
     const item = {
