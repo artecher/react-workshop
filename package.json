@@ -1,0 +1,21 @@
+{
+  "name": "react-workshop",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "enzyme": "^2.9.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-fa": "^4.2.0",
+    "react-test-renderer": "^15.6.1"
+  },
+  "devDependencies": {
+    "react-scripts": "1.0.10"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}
