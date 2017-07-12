@@ -10,7 +10,7 @@ describe('AddTask', () => {
 
   beforeEach(() => {
     mockAddfunc = jest.fn()
-    wrapper = shallow(<AddTask AddTask={mockAddfunc}/>)
+    wrapper = shallow(<AddTask onAddTask={mockAddfunc}/>)
   })
 
   it('should disable add button when input is empty', () => {

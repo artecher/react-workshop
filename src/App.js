@@ -59,7 +59,7 @@ class App extends Component {
         </div>
         <div className="App-intro">
           <h3>ADD Task</h3>
-          <AddTask AddTask={this.onAddTask}/>
+          <AddTask onAddTask={this.onAddTask}/>
           <br/>
           <h3>TODO Tasks</h3>
           {this.state.tasks.filter((t) => {

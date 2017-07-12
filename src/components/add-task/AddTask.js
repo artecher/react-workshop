@@ -15,7 +15,7 @@ class AddTask extends React.Component {
   }
 
   onClickAdd = () => {
-    this.props.AddTask(this.state.todoContentInput)
+    this.props.onAddTask(this.state.todoContentInput)
     this.setState({
       todoContentInput: '',
     })
@@ -43,7 +43,7 @@ class AddTask extends React.Component {
 }
 
 AddTask.propTypes = {
-  AddTask: PropTypes.func.isRequired
+  onAddTask: PropTypes.func.isRequired
 }
 
 export default AddTask
