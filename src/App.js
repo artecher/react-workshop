@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component } from 'react'
+import logo from './logo.svg'
+import './App.css'
 import AddTask from './components/add-task/AddTask'
 import TaskItem from './components/task-item/TaskItem'
 
@@ -85,8 +85,8 @@ class App extends Component {
         </div>
 
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
