@@ -40,13 +40,10 @@ class App extends Component {
   }
 
   onDeleteTask = (id) => {
-    const index = this.state.tasks.findIndex((t) => {
-      return t.id === id
-    })
-    const newArray = [...this.state.tasks]
-    newArray.splice(index, 1)
     this.setState({
-      tasks: newArray
+      tasks: this.state.tasks.filter((t) => {
+        return t.id !== id
+      })
     })
   }
 
