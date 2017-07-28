@@ -44,7 +44,7 @@ describe('TaskItem', () => {
     expect(wrapper.find('.checkbox').prop('checked')).toBe(true)
   })
 
-  it('should add class stoked to span when isDone is true', () => {
+  it('should add class strike to span when isDone is true', () => {
     taskObj = {id: 123, content: 'learn react', isDone: true}
     wrapper = shallow(
       <TaskItem
